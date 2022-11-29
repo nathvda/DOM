@@ -23,4 +23,3 @@ function randColor(){
 for (par of paras){
     par.hasAttribute("class") ? console.log(par.innerHTML,par.classList) : (console.log(par.innerHTML), par.style.color = `rgb(${randColor()},${randColor()},${randColor()})`);
 }
-
