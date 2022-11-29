@@ -19,10 +19,7 @@ function randColor(){
 // Uses the random number generator to create a random color.
 document.body.style.backgroundColor = `rgb(${randColor()},${randColor()},${randColor()})`;
 
-// Identifies the body child and create an array of its children.
-let element = document.body.children;
-
 // Displays all children of the body child.
-for (let elem of element){
+for (let elem of document.body.children){
     console.log(elem);
 }
