@@ -2,15 +2,11 @@
 */
 
 let toMove = document.querySelector("ol");
+
 let last = toMove.lastElementChild;
 let first = toMove.children[0];
-let second = toMove.children[1];
-let third = toMove.children[2];
-let fourth = toMove.children[3];
-last.appendChild(first);
-first.appendChild(second);
-second.appendChild(third);
-third.appendChild(fourth);
+
+toMove.insertBefore(last, first);
 
 // accessing the sections.
 let sectionPack = document.querySelectorAll("section");
